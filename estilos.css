@@ -1,3 +1,11 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #EAE25D;
+    --secundario: #0097A7;
+    --gris: #757575;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -6,11 +14,24 @@ body {
     font-size: 16px;
 }
 
-h1 {
+.titulo {
     text-align: center;
     font-size: 3.8rem;
+    font-family: 'Krub', sans-serif;
+    font-size: 400;
 }
 
-span {
+.titulo span {
     font-size: 2rem;
 }
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.MainNav {}
