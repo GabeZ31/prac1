@@ -1,7 +1,7 @@
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #EAE25D;
+    --primario: rgb(240, 202, 32);
     --secundario: #0097A7;
     --gris: #757575;
 }
@@ -26,12 +26,36 @@ body {
 }
 
 .contenedor {
-    width: 120rem;
-    margin: 0 auto 0 auto;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 .nav-bg {
     background-color: var(--secundario);
 }
 
-.MainNav {}
+.MainNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .MainNav {
+        flex-direction: row;
+    }
+}
+
+.MainNav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.MainNav a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
